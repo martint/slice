@@ -543,6 +543,11 @@ public final class Slice
         return unsafe.getDouble(base, address + index);
     }
 
+    public double getDoubleUnchecked(int index)
+    {
+        return unsafe.getDouble(base, address + index);
+    }
+
     /**
      * Transfers portion of data from this slice into the specified destination starting at
      * the specified absolute {@code index}.
